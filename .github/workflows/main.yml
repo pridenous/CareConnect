@@ -17,7 +17,8 @@ jobs:
 
       - name: Build and Deploy
         run: |
+          cd careconnect-front
           npm install
           npm run build
           
-          sudo cp -r ./build/* ../../../nginx/html/careconnect
+          sudo cp -r ./build/* /home/nousless/nginx/app/careconnect
