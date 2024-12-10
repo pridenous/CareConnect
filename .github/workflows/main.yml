@@ -1,4 +1,4 @@
-name: Deploy react-app 
+name: Trigger on CareConnect Frontend Changes 
 
 
 
@@ -6,6 +6,8 @@ on:
   push:
     branches:
       - master  # Replace with your branch name
+    paths:
+      - careconnect-front/**
 
 jobs:
   deploy:
